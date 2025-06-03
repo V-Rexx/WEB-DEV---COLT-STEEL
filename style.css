@@ -1,0 +1,22 @@
+h1, h2 {
+    color: #bfd0d8;
+    background-color: rgb(36, 2, 2);
+    text-align: center;
+    font-weight: 400;
+    text-decoration: underline wavy rgb(234, 231, 216);
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+p{
+    line-height: 2;
+    /* font-family: Segoe UI, sans-serif; */
+    font-family: monospace;
+
+}
