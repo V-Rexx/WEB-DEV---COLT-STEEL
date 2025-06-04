@@ -21,3 +21,8 @@ const PI = 3.14;
 // PI = 3.14159;  not allowed, will give and error . 
 // Block_scoped ,  cannot be redclared or updated , must be initialized at declaration.
 
+
+//variables can change types
+let num = 23;
+num = true;
+num = 100; 
