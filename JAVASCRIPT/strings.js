@@ -44,7 +44,7 @@ let afterTrim = userInput.trim();
 console.log(userInput);
 console.log(afterTrim);
 
-//IN JS we an trim as many string methods as we want.
+//IN JS we can use as many string methods as we want.
 let res = "   Hello World   "
     .trim() //-> "Hello World"
     .toUpperCase() //-> "HELLO WORLD"
