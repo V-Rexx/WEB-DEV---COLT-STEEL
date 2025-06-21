@@ -53,3 +53,37 @@ const restaurant = {
 //YOUR CODE GOES DOWN HERE:
 let fullAddress = restaurant.address + ", " + restaurant.city + ", " + restaurant.state + " " + restaurant.zipcode;
 console.log(fullAddress);
+
+const midterms = {
+    danielle : 96,
+    thomas : 78
+};
+
+midterms.thomas = 79;
+console.log(midterms.thomas);
+console.log(midterms);
+midterms['danielle'] = 'A';
+console.log(midterms);
+midterms.ezra = 'B+'; // created new key and val. 
+console.log(midterms);
+midterms['Antonio'] = 'A-';
+console.log(midterms);
+
+//---------------------------------
+const comments = [
+    {username: "Tammy", text: "lolololol", votes: 9},
+    {username: "Ram", text: "high ya", votes: 10}
+]
+
+console.log(comments[1].text);
+
+const student = {
+    firstName: 'David',
+    lastName: 'Jones',
+    strengths: ['Music', 'Art'],
+    exams: {
+        midterm: 92,
+        final: 88
+    }
+}
+console.log(student.exams.final);
