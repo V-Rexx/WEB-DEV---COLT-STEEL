@@ -184,12 +184,42 @@
 //myMath["cube"](4) - one way to access.
 
 //Shorter way to define methods. 
-const myMath = {
-    PI: 3.14159,
-    square(num) {
-        return num**2;
-    },
-    cube(num) {
-        return num**3;
+// const myMath = {
+//     PI: 3.14159,
+//     square(num) {
+//         return num**2;
+//     },
+//     cube(num) {
+//         return num**3;
+//     }
+// }
+
+// THIS , use the keyword this to access other properties
+//on the same object.
+
+// const cat = {
+//     name: 'Blue Steele',
+//     color: 'grey',
+//     breed: 'scottish fold',
+//     meow() {
+//         console.log(this.color);
+//         console.log(`${this.name} says MEOWWW`);
+//     }
+// }
+
+//TRY/CATCH
+// try {
+//     hello.toUpperCase();
+// } catch {
+//     console.log('ERRORRRR');
+// }
+// console.log('AFTER');
+
+function yell(msg){
+    try {
+        console.log(msg.toUpperCase().repeat(3));
+    } catch (e) {
+        console.log(e);
+        console.log('Give a string next time')
     }
 }
