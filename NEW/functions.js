@@ -132,36 +132,64 @@
 // callTwice(rollDie);
 
 
-function makeMysteryFunc() {
-    const rand = Math.random();
-    if(rand > 0.5){
-        return function () {
-            console.log("Congrts, you win a million dollars");
-        }
-    }
-    else {
-        return function () {
-            alert("YOU HAVE A VIRUS");
-            alert("STOP");
-            alert("STOP");
-            alert("STOP");
-            alert("STOP");
-            alert("STOP");
-            alert("STOP");
-            alert("STOP");
-            alert("STOP");
-        }
-    }
-}
+// function makeMysteryFunc() {
+//     const rand = Math.random();
+//     if(rand > 0.5){
+//         return function () {
+//             console.log("Congrts, you win a million dollars");
+//         }
+//     }
+//     else {
+//         return function () {
+//             alert("YOU HAVE A VIRUS");
+//             alert("STOP");
+//             alert("STOP");
+//             alert("STOP");
+//             alert("STOP");
+//             alert("STOP");
+//             alert("STOP");
+//             alert("STOP");
+//             alert("STOP");
+//         }
+//     }
+// }
 
-const mystery = makeMysteryFunc();
+// const mystery = makeMysteryFunc();
 
 // function isBetween(num){
 //     return num>=50 && num<=100;
 // }
 
-function makeBetweenFunc(min, max) {
-    return function (num){
-        return num>= min && num<=max;
+// function makeBetweenFunc(min, max) {
+//     return function (num){
+//         return num>= min && num<=max;
+//     }
+// }
+
+
+//we can add functions as properties on objects.
+//we call them methods!
+//methods are wrapped in objects.
+
+// const myMath = {
+//     PI: 3.14159,
+//     square: function(num){
+//         return num*num;
+//     },
+//     cube: function(num){
+//         return num**3;
+//     }
+// };
+//Every method is a function. but not vice versa.
+//myMath["cube"](4) - one way to access.
+
+//Shorter way to define methods. 
+const myMath = {
+    PI: 3.14159,
+    square(num) {
+        return num**2;
+    },
+    cube(num) {
+        return num**3;
     }
 }
